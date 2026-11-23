@@ -257,6 +257,7 @@ all_tests =					\
   tests/fmt/width.sh				\
   tests/misc/echo.sh				\
   tests/env/env.sh				\
+  tests/env/env-glob-path.sh			\
   tests/env/env-signal-handler.sh		\
   tests/ptx/ptx.pl				\
   tests/test/test.pl				\
