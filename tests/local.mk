@@ -426,6 +426,7 @@ all_tests =					\
   tests/sort/sort.pl				\
   tests/sort/sort-benchmark-random.sh		\
   tests/sort/sort-compress.sh			\
+  tests/sort/sort-compress-glob-path.sh		\
   tests/sort/sort-compress-hang.sh		\
   tests/sort/sort-compress-proc.sh		\
   tests/sort/sort-continue.sh			\
