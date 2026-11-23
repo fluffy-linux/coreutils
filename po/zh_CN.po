@@ -1,0 +1,1 @@
+../translationproject/PO-files/zh_CN/coreutils-9.11-pre1.zh_CN.po

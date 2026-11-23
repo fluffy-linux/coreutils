@@ -1,0 +1,1 @@
+../translationproject/PO-files/ka/coreutils-9.10-pre1.ka.po
