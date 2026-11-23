@@ -27,6 +27,12 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <spawn.h>
+#if HAVE_PATHS_H
+# include <paths.h>
+#endif
+#ifndef _PATH_BSHELL
+# define _PATH_BSHELL "/bin/sh"
+#endif
 
 #include "system.h"
 #include "alignalloc.h"
@@ -594,7 +600,7 @@ create (char const *name)
 
       char const *shell_prog = getenv ("SHELL");
       if (shell_prog == NULL)
-        shell_prog = "/bin/sh";
+        shell_prog = _PATH_BSHELL;
       char const *const argv[] = { last_component (shell_prog), "-c",
                                    filter_command, NULL };
 

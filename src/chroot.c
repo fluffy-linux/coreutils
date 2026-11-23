@@ -22,6 +22,12 @@
 #include <sys/types.h>
 #include <pwd.h>
 #include <grp.h>
+#if HAVE_PATHS_H
+# include <paths.h>
+#endif
+#ifndef _PATH_BSHELL
+# define _PATH_BSHELL "/bin/sh"
+#endif
 
 #include "system.h"
 #include "ignore-value.h"
@@ -339,7 +345,7 @@ main (int argc, char **argv)
       /* No command.  Run an interactive shell.  */
       char *shell = getenv ("SHELL");
       if (shell == NULL)
-        shell = bad_cast ("/bin/sh");
+        shell = bad_cast (_PATH_BSHELL);
       argv[0] = shell;
       argv[1] = bad_cast ("-i");
       argv[2] = NULL;

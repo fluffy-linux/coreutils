@@ -77,4 +77,11 @@ for buf in 1000 1000000; do
     "yes | split --filter='head -c1 >/dev/null' -b $buf" || fail=1
 done
 
+# Verify --filter works when SHELL is unset (default shell fallback).
+seq 5 > in-noshell || framework_failure_
+env -u SHELL split -l2 --filter='cat > $FILE.out' in-noshell ns- || fail=1
+cat ns-*.out > out-noshell || fail=1
+compare in-noshell out-noshell || fail=1
+rm -f in-noshell out-noshell ns-*
+
 Exit $fail
