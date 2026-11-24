@@ -101,7 +101,7 @@ done
 # PATH modifications affect exec.
 mkdir unlikely_name || framework_failure_
 cat <<EOF > unlikely_name/also_unlikely || framework_failure_
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo pass
 EOF
 chmod +x unlikely_name/also_unlikely || framework_failure_
@@ -143,7 +143,7 @@ esac
 
 # No way to directly invoke program name containing =.
 cat <<EOF >./c=d || framework_failure_
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo pass
 EOF
 chmod +x c=d || framework_failure_
