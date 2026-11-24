@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # makeinfo wrapper that post-processes HTML output to replace _002d with -,
 # only on lines containing "option", corresponding to our @optAnchor macro.
 # Note texi uses "-" in anchors for spaces, hence why it escapes - with _002d.

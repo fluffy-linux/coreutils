@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Generate lists of all coreutils programs, to be fed both to Autoconf
 # and Automake, and with further distinctions about how and when these
 # programs should be built.  This is useful to avoid duplicating these

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Generate the list of rules for the single-binary option based on all the other
 # binaries found in src/local.mk.
