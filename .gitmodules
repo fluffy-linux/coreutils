@@ -4,3 +4,21 @@
 [submodule "translationproject"]
 	path = translationproject
 	url = ../translationproject.git
+	fluffy-sparse = /PO-files/ar/coreutils-9.10-pre1.ar.po
+	fluffy-sparse = /PO-files/cs/coreutils-9.11-pre1.cs.po
+	fluffy-sparse = /PO-files/de/coreutils-9.10-pre1.de.po
+	fluffy-sparse = /PO-files/el/coreutils-7.2.el.po
+	fluffy-sparse = /PO-files/et/coreutils-9.11-pre1.et.po
+	fluffy-sparse = /PO-files/fr/coreutils-9.11-pre1.fr.po
+	fluffy-sparse = /PO-files/gl/coreutils-9.9.280.gl.po
+	fluffy-sparse = /PO-files/ia/coreutils-9.9.280.ia.po
+	fluffy-sparse = /PO-files/ka/coreutils-9.10-pre1.ka.po
+	fluffy-sparse = /PO-files/ko/coreutils-9.11-pre1.ko.po
+	fluffy-sparse = /PO-files/nl/coreutils-9.10-pre1.nl.po
+	fluffy-sparse = /PO-files/pl/coreutils-9.11-pre1.pl.po
+	fluffy-sparse = /PO-files/pt/coreutils-9.11-pre1.pt.po
+	fluffy-sparse = /PO-files/ro/coreutils-9.11-pre1.ro.po
+	fluffy-sparse = /PO-files/sr/coreutils-9.10-pre1.sr.po
+	fluffy-sparse = /PO-files/sv/coreutils-9.10-pre1.sv.po
+	fluffy-sparse = /PO-files/uk/coreutils-9.11-pre1.uk.po
+	fluffy-sparse = /PO-files/zh_CN/coreutils-9.11-pre1.zh_CN.po
